@@ -20,7 +20,7 @@ A Google Chrome Extension that converts Notion content into clean, readable text
 ## Usage
 
 1. Open any Notion page
-2. Click the Notion Textify extension icon
+2. Click "Textify Notion Page Content" in context menu
 3. Your content is converted and copied to clipboard
 4. Paste as plain text anywhere
 

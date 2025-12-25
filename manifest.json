@@ -4,9 +4,9 @@
   "manifest_version": 3,
   "description": "Copy Notion page as text data with proper formatting.",
   "icons": {
-    "16": "icon_textify-notion_128x128.png",
-    "48": "icon_textify-notion_128x128.png",
-    "128": "icon_textify-notion_128x128.png"
+    "16": "icon_128x128.png",
+    "48": "icon_128x128.png",
+    "128": "icon_128x128.png"
   },
   "permissions": [
     "contextMenus",
