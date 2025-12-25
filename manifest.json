@@ -1,0 +1,19 @@
+{
+  "name": "Notion Textify",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "Copy Notion page as text data with proper formatting.",
+  "icons": {
+    "16": "icon_textify-notion_128x128.png",
+    "48": "icon_textify-notion_128x128.png",
+    "128": "icon_textify-notion_128x128.png"
+  },
+  "permissions": [
+    "contextMenus",
+    "scripting",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
