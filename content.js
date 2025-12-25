@@ -84,7 +84,7 @@
       const diff = maxWidth - currentWidth;
       const depth = Math.round(diff / 28);
       // 階層0,1はインデントなしとする
-      const indentString = "  ".repeat(Math.max(1, depth) - 1);
+      const indentString = "　".repeat(Math.max(1, depth) - 1);
 
       // 見出し
       const classes = blockContainer.className;
