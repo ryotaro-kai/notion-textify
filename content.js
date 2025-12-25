@@ -83,7 +83,8 @@
       const currentWidth = el.getBoundingClientRect().width;
       const diff = maxWidth - currentWidth;
       const depth = Math.round(diff / 28);
-      const indentString = "　".repeat(Math.max(0, depth));
+      // 階層0,1はインデントなしとする
+      const indentString = "  ".repeat(Math.max(1, depth) - 1);
 
       // 見出し
       const classes = blockContainer.className;
@@ -93,10 +94,10 @@
       if (classes.includes('notion-header-block') || classes.includes('notion-sub_header-block') || classes.includes('notion-sub_sub_header-block')) {
         prefix = "*"; suffix = "*";
       } else if (classes.includes('bulleted_list')) {
-        prefix = "・ ";
+        prefix = "・";
       } else if (classes.includes('numbered_list')) {
         // 番号付きリストは箇条書きに変更
-        prefix = "・ ";
+        prefix = "・";
       } else if (classes.includes('to_do')) {
         const isChecked = blockContainer.querySelector('[aria-checked="true"]');
         prefix = (isChecked ? '[x] ' : '[ ] ');
